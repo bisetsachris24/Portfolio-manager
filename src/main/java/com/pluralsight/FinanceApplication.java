@@ -11,7 +11,6 @@ public class FinanceApplication {
 
         // Try to deposit money into both accounts.
         account1.deposit(100);
-
         ((BankAccount) account2).deposit(100);
 
         System.out.println(account1);
