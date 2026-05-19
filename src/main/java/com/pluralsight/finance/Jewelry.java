@@ -1,8 +1,8 @@
-package com.pluralsight;
+package com.pluralsight.finance;
 
-public class Jewelry extends FixedAsset {
+public class Jewelry extends FixedAssets {
 
-
+    /** Base value of a piece at 24-karat purity. */
     private static final double BASE_VALUE_AT_24K = 500.0;
 
     private final double karat;
@@ -21,5 +21,3 @@ public class Jewelry extends FixedAsset {
         return BASE_VALUE_AT_24K * (karat / 24.0);
     }
 }
-
-

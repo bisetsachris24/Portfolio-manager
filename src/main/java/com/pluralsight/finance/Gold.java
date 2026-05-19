@@ -1,7 +1,6 @@
 package com.pluralsight.finance;
 
-public class Gold {
-    public class Gold extends FixedAsset {
+    public class Gold extends FixedAssets {
 
         /** Spot price per troy ounce, in dollars. */
         private static final double PRICE_PER_OUNCE = 2000.0;
@@ -22,4 +21,4 @@ public class Gold {
             return weight * PRICE_PER_OUNCE;
         }
     }
-}
+

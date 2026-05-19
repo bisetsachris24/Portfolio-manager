@@ -9,7 +9,7 @@ private static final double PRICE_PER_SQFT = 200.0;
     private final int bedrooms;
 
     public House(int yearBuilt, int squareFeet, int bedrooms) {
-        super("House", squareFeet * PRICE_PER_SQFT);
+        super();
         this.yearBuilt = yearBuilt;
         this.squareFeet = squareFeet;
         this.bedrooms = bedrooms;
@@ -27,8 +27,4 @@ private static final double PRICE_PER_SQFT = 200.0;
         return bedrooms;
     }
 
-    @Override
-    public double getValue() {
-        return squareFeet * PRICE_PER_SQFT;
-    }
 }
