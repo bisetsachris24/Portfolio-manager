@@ -1,6 +1,6 @@
 package com.pluralsight.finance;
 
-    public class BankAccount implements IValuable {
+    public class BankAccount implements Valuable {
 
         private final int accountNumber;
         private final String owner;
@@ -40,9 +40,7 @@ package com.pluralsight.finance;
             return balance;
         }
 
-        /**
-         * For a bank account, its value is simply the current balance.
-         */
+
         @Override
         public double getValue() {
             return balance;
